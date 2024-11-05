@@ -1,0 +1,87 @@
+/* Fondo de pantalla completo */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('images/vACALOCA.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Contenedor principal */
+.header, .main-content, .footer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Sección de introducción */
+.intro {
+  margin-top: 20px;
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+/* Botones de estilo */
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover */
+.button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #3e8e41;
+}
+
+/* Extra content */
+.extra-content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Lista de artículos */
+.extra-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.extra-content li {
+  margin-bottom: 10px;
+}
+
+/* Pie de página */
+.footer {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: #ccc;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .header, .main-content, .footer {
+    padding: 15px;
+  }
+}
